@@ -18,6 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
-Route::get('/a', 'HomeController@a');
-Route::get('/b', 'HomeController@b');
+Route::get('/verify', 'VerifyController@index');
+Route::get('/out', 'OutController@index');
+Route::get('/back', 'BackController@index');
+Route::get('/manager', 'ManagerController@index');
 
